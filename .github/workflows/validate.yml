@@ -1,0 +1,21 @@
+name: Azure Infrastructure Validation
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Bicep
+        run: az bicep install
+
+      - name: Validate Bicep
+        run: az bicep build --file infrastructure/main.bicep
+        
