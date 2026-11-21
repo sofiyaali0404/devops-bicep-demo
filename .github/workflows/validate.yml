@@ -12,11 +12,12 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        
+
       - name: Explore Linux environment
         run: |
          pwd
          ls
+         ls -a
          echo "Hello from Linux!"
 
 
