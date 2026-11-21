@@ -12,6 +12,13 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        
+      - name: Explore Linux environment
+        run: |
+         pwd
+         ls
+         echo "Hello from Linux!"
+
 
       - name: Install Bicep
         run: az bicep install
