@@ -22,4 +22,7 @@ jobs:
           pwd
           cd ..
           pwd
+          mkdir testing
+          cd testing
+          ls
           echo "Hello from Linux!"      
