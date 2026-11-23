@@ -20,4 +20,6 @@ jobs:
           ls -a
           cd infrastructure
           pwd
+          cd ..
+          pwd
           echo "Hello from Linux!"      
