@@ -18,6 +18,7 @@ jobs:
          pwd
          ls
          ls -a
+         cd infrastructure
          echo "Hello from Linux!"
 
 
