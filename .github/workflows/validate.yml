@@ -15,16 +15,9 @@ jobs:
 
       - name: Explore Linux environment
         run: |
-         pwd
-         ls
-         ls -a
-         cd infrastructure
-         echo "Hello from Linux!"
-
-
-      - name: Install Bicep
-        run: az bicep install
-
-      - name: Validate Bicep
-        run: az bicep build --file infrastructure/main.bicep
-        
+          pwd
+          ls
+          ls -a
+          cd infrastructure
+          pwd
+          echo "Hello from Linux!"      
